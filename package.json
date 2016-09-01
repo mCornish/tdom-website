@@ -4,8 +4,11 @@
   "description": "Website for The Dawn of Man novel",
   "main": "index.html",
   "scripts": {
+    "start": "./bin/browser-sync & npm run watch",
+    "build-css": "./bin/build-css",
+    "build-js": "./bin/build-js",
     "build": "./bin/build-css & ./bin/build-js",
-    "watch": "./bin/watch-css",
+    "watch": "./bin/watch-css & ./bin/watch-js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +24,7 @@
   "devDependencies": {
     "babel-cli": "^6.14.0",
     "babel-preset-es2015": "^6.14.0",
+    "browser-sync": "^2.14.3",
     "node-sass": "^3.8.0",
     "nodemon": "^1.10.2"
   }

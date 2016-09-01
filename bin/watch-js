@@ -1,0 +1,1 @@
+nodemon -e js --ignore public/ -x "npm run build-js"

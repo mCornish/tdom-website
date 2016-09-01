@@ -7,5 +7,5 @@ function init() {
 }
 
 function _bindEvents() {
-  
+
 }
