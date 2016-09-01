@@ -1,0 +1,19 @@
+{
+  "name": "dom-website",
+  "version": "1.0.0",
+  "description": "Website for The Dawn of Man novel",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mCornish/tdom-website.git"
+  },
+  "author": "Mike Cornish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mCornish/tdom-website/issues"
+  },
+  "homepage": "https://github.com/mCornish/tdom-website#readme"
+}
