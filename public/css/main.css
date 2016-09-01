@@ -1,0 +1,93 @@
+/* Base */
+@media screen and (min-width: 1px) {
+  html {
+    font-size: 14px; } }
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 16px; } }
+
+body {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  color: #1a1a1a; }
+
+h1, h2, p, a {
+  margin: 0;
+  line-height: 1.48; }
+
+h1 {
+  font-size: 4rem; }
+
+h2 {
+  font-size: 1.8rem; }
+
+p, a, button, input {
+  font-size: 1rem; }
+
+p {
+  margin-top: 1em; }
+
+a {
+  text-decoration: none;
+  color: #f2590d; }
+
+a:hover {
+  text-decoration: underline; }
+
+.container {
+  max-width: 100vw; }
+
+@media screen and (min-width: 1px) {
+  .container {
+    padding: 0; } }
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 5vw;
+    padding-right: 5vw; } }
+
+@media screen and (min-width: 1366px) {
+  .container {
+    padding-left: 20vw;
+    padding-right: 20vw; } }
+
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  top: 0;
+  padding: 2em;
+  margin: 5em 1em;
+  background-color: rgba(255, 255, 255, 0.8); }
+
+footer {
+  background-color: #333333;
+  padding: 2em;
+  margin-top: 2em;
+  color: #e6e6e6;
+  text-align: center; }
+
+/* Components */
+/* Utilities */
+.color-brand-1 {
+  color: #f2b90d; }
+
+.color-brand-2 {
+  color: #f2590d; }
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.flex-center-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.text-center {
+  text-align: center !important; }

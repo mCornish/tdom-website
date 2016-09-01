@@ -1,0 +1,122 @@
+// Variables
+$color-text: hsl(0,0, 10);
+$color-brand-1: hsl(45,90,50);
+$color-brand-2: hsl(20,90,50);
+
+
+/* Base */
+@media screen and (min-width: 1px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  color: $color-text;
+}
+
+h1, h2, p, a {
+  margin: 0;
+  line-height: 1.48;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+p, a, button, input {
+  font-size: 1rem;
+}
+
+p {
+  margin-top: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: $color-brand-2;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 100vw;
+}
+@media screen and (min-width: 1px) {
+	.container {
+		padding: 0;
+	}
+}
+@media screen and (min-width: 768px) {
+	.container {
+		padding-left: 5vw;
+		padding-right: 5vw;
+	}
+}
+@media screen and (min-width: 1366px) {
+	.container {
+		padding-left: 20vw;
+		padding-right: 20vw;
+	}
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  top: 0;
+  padding: 2em;
+  margin: 5em 1em;
+  background-color: rgba(255,255,255,.8)
+}
+
+footer {
+  background-color: hsl(0,0,20);
+  padding: 2em;
+  margin-top: 2em;
+  color: hsl(0,0,90);
+  text-align: center;
+}
+
+
+/* Components */
+.comp {
+
+}
+
+
+/* Utilities */
+.color-brand-1 {
+  color: $color-brand-1;
+}
+.color-brand-2 {
+  color: $color-brand-2;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-center-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text-center {
+  text-align: center !important;
+}
