@@ -101,6 +101,19 @@ nav a {
   background-color: hsl(0,0,5);
   transition: all 1s ease;
 }
+
+.intro__flashlight {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5em;
+  height: 5em;
+  background-image: url(/public/images/dom-website-intro.jpg);
+  background-position: center;
+  z-index: 5;
+}
+
 .intro__light {
   position: absolute;
 }
