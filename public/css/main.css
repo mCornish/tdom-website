@@ -11,7 +11,7 @@ body {
   position: absolute;
   top: 0;
   margin: 0;
-  color: #1a1a1a; }
+  color: #e6e6e6; }
 
 h1, h2, p, a {
   margin: 0;
@@ -67,7 +67,7 @@ nav {
   top: 0;
   padding: 2em;
   margin: 5em 1em;
-  background-color: #0d0d0d;
+  background-color: #00030a;
   z-index: 3; }
 
 nav a {
@@ -81,7 +81,7 @@ nav a {
   overflow: none;
   width: 100vw;
   height: 90vh;
-  background-color: #0d0d0d;
+  background-color: #00030a;
   -webkit-transition: all 1s ease;
   transition: all 1s ease; }
 
@@ -135,16 +135,22 @@ nav a {
   position: absolute;
   color: rgba(255, 242, 230, 0);
   -webkit-animation: glow1 1.5s ease-in-out infinite alternate;
-          animation: glow1 1.5s ease-in-out infinite alternate;
-  font-size: 5em; }
+          animation: glow1 1.5s ease-in-out infinite alternate; }
+
+.intro__light:nth-child(1) .intro__light-glow {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  font-size: 3em; }
 
 .intro__light:nth-child(2) .intro__light-glow {
   -webkit-animation-delay: 1s;
-          animation-delay: 1s; }
+          animation-delay: 1s;
+  font-size: 6em; }
 
 .intro__light:nth-child(3) .intro__light-glow {
   -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s; }
+          animation-delay: 1.5s;
+  font-size: 4em; }
 
 .intro__egg .intro__light-glow {
   -webkit-animation: glow2 3s ease-in-out infinite alternate;
@@ -153,9 +159,34 @@ nav a {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg); }
 
+.intro__disturb {
+  position: absolute;
+  top: 0;
+  left: -30vw;
+  width: 30vw;
+  height: 50vw;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0a0a0a+35,ffffff+59&1+35,0+59 */
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #00030a 30%, transparent 59%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-radial-gradient(center ellipse, #00030a 30%, transparent 59%);
+  background: radial-gradient(ellipse at center, #00030a 30%, transparent 59%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0a0a', endColorstr='#00ffffff',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+
+.intro__disturb:nth-child(1) {
+  -webkit-animation: disturb1 7s ease-in infinite;
+          animation: disturb1 7s ease-in infinite; }
+
+.intro__disturb:nth-child(2) {
+  -webkit-animation: disturb2 10s ease-in infinite;
+          animation: disturb2 10s ease-in infinite;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s; }
+
 .synopsis {
-  background-color: #0d0d0d;
-  color: #e6e6e6; }
+  background-color: #00030a; }
 
 footer {
   display: -webkit-box;
@@ -200,6 +231,38 @@ footer p {
     text-shadow: 0 0 calc(0px + 15px) #e6eeff, 0 0 calc(20px + 15px) #e6eeff, 0 0 calc(40px + 15px) #e6eeff, 0 0 calc(60px + 10px) #3377ff, 0 0 calc(90px + 10px) #3377ff, 0 0 calc(110px + 10px) #3377ff, 0 0 calc(140px + 10px) #3377ff, 0 0 calc(180px + 10px) #3377ff; }
   100% {
     text-shadow: 0 0 calc(5px + 15px) #e6eeff, 0 0 calc(0px + 15px) #e6eeff, 0 0 calc(5px + 15px) #e6eeff, 0 0 calc(10px + 10px) #3377ff, 0 0 calc(25px + 10px) #3377ff, 0 0 calc(35px + 10px) #3377ff, 0 0 calc(40px + 10px) #3377ff, 0 0 calc(65px + 10px) #3377ff; } }
+
+@-webkit-keyframes disturb1 {
+  0%, 90% {
+    -webkit-transform: none;
+            transform: none; }
+  100% {
+    -webkit-transform: translateX(150vw);
+            transform: translateX(150vw); } }
+
+@keyframes disturb1 {
+  0%, 90% {
+    -webkit-transform: none;
+            transform: none; }
+  100% {
+    -webkit-transform: translateX(150vw);
+            transform: translateX(150vw); } }
+
+@-webkit-keyframes disturb2 {
+  0%, 90% {
+    -webkit-transform: translateX(150vw);
+            transform: translateX(150vw); }
+  100% {
+    -webkit-transform: none;
+            transform: none; } }
+
+@keyframes disturb2 {
+  0%, 90% {
+    -webkit-transform: translateX(150vw);
+            transform: translateX(150vw); }
+  100% {
+    -webkit-transform: none;
+            transform: none; } }
 
 /* Utilities */
 .color-brand-1 {
