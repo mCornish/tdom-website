@@ -85,11 +85,16 @@ nav {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
   background-color: hsl(0,0,20);
   padding: 2em;
   margin-top: 2em;
   color: hsl(0,0,90);
   text-align: center;
+}
+footer p {
+  margin: 0;
 }
 
 
