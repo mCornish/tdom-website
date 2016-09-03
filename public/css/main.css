@@ -53,19 +53,42 @@ a:hover {
     padding-left: 20vw;
     padding-right: 20vw; } }
 
+/* Components */
 nav {
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   right: 0;
   top: 0;
   padding: 2em;
   margin: 5em 1em;
-  background-color: rgba(255, 255, 255, 0.8); }
+  background-color: #0d0d0d; }
+
+nav a {
+  color: #e6e6e6;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: .5em; }
+
+.intro {
+  width: 100vw;
+  height: 90vh;
+  background-color: #0d0d0d;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease; }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #333333;
   padding: 2em;
   margin-top: 2em;
@@ -75,7 +98,6 @@ footer {
 footer p {
   margin: 0; }
 
-/* Components */
 /* Utilities */
 .color-brand-1 {
   color: #f2b90d; }
@@ -84,15 +106,30 @@ footer p {
   color: #f2590d; }
 
 .flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .flex-center-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .text-center {
   text-align: center !important; }

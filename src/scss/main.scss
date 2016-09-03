@@ -73,6 +73,10 @@ a:hover {
 	}
 }
 
+
+
+
+/* Components */
 nav {
   position: fixed;
   display: flex;
@@ -81,8 +85,23 @@ nav {
   top: 0;
   padding: 2em;
   margin: 5em 1em;
-  background-color: rgba(255,255,255,.8)
+  background-color: hsl(0,0,5);
 }
+nav a {
+  color: hsl(0,0,90);
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: .5em;
+}
+
+
+.intro {
+  width: 100vw;
+  height: 90vh;
+  background-color: hsl(0,0,5);
+  transition: all 1s ease;
+}
+
 
 footer {
   display: flex;
@@ -95,12 +114,6 @@ footer {
 }
 footer p {
   margin: 0;
-}
-
-
-/* Components */
-.comp {
-
 }
 
 

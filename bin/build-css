@@ -1,1 +1,2 @@
 node-sass --include-path scss src/scss/main.scss public/css/main.css
+postcss --use autoprefixer -r public/css/main.css
