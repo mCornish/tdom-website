@@ -14,10 +14,10 @@
 
 <body>
 	<nav>
-		<a href="#synopsis">The Story</a>
-		<a href="#author">The Author</a>
-		<a href="#faq">FAQ</a>
-		<a href="#cta" class="button">Pre-Order</a>
+		<a href="#synopsis" class="js-nav-link is-active">The Story</a>
+		<a href="#author" class="js-nav-link">The Author</a>
+		<a href="#faq" class="js-nav-link">FAQ</a>
+		<a href="#cta" class="js-nav-link button">Pre-Order</a>
 	</nav>
 	<main>
 		<section class="js-intro intro">
@@ -48,6 +48,8 @@
 				<div class="intro__disturb"></div>
 			</div>
 		</section>
+
+
 		<section id="synopsis" class="synopsis container">
 			<header>
 				<h1 class="synopsis__title">The Dawn of Man</h1>
@@ -55,13 +57,20 @@
 			<p>There are many stories of how our world began, but there is only one tale that truly matters. A world of magic and horror awaits those who wish to know the truth about the dawn of man.</p>
 			<p>As the sixty-first generation of mankind comes of age and a centuries-long war against natural horrors reaches a tipping point, a young soldier searches for a purpose beyond the only life he’s ever known.</p>
 		</section>
-		<section id="author" class="author">
+
+
+		<section id="author" class="author container container--small light-theme flex-row">
+			<div>
 			<header>
 				<h1>The Author</h1>
 			</header>
 			<p>Info about me</p>
+			</div>
+			<img class="author__image" src="/public/images/author.jpg" />
 		</section>
-		<section id="faq" class="faq">
+
+
+		<section id="faq" class="faq container container--small light-theme">
 			<header>
 				<h1>Frequently Ask Questions</h1>
 			</header>
@@ -74,11 +83,12 @@
 			<h2>Question 3</h2>
 			<p>Question 3 content</p>
 		</section>
-		<section id="cta" class="cta">
+		<section id="cta" class="cta container">
 			<header>
-				<h1>Help Reveal the Truth</h1>
+				<h1 class="text-center">Help Reveal the Truth</h1>
 			</header>
 			<p>CTA content</p>
+			<a class="button">Pre-Order</a>
 		</section>
 		<footer>
 			<p>&copy; 2016 Mike Cornish.</p>
@@ -86,7 +96,7 @@
 				<a href="#synopsis">The Story</a>
 				<a href="#author">The Author</a>
 				<a href="#faq">FAQ</a>
-				<a href="#cta" class="button">Pre-Order</a>
+				<a href="#cta">Pre-Order</a>
 			</div>
 			<div class="ex-links flex-center">
 				<a href="http://mikecornish.net" target="_blank">Mike Cornish</a>

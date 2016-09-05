@@ -10,6 +10,11 @@ function bindEvents() {
 	const BACKGROUND_WIDTH = 3840;
 	const BACKGROUND_HEIGHT = 2160;
 
+	$( '.js-nav-link' ).on( 'click', function(e) {
+		$( '.js-nav-link.is-active' ).removeClass( 'is-active' );
+		$( e.target ).addClass( 'is-active' );
+	});
+
 	// $( '.js-intro' ).on( 'mousemove', function(e) {
 	// 	const $light = $( '.js-flashlight' );
 	// 	const elWidth = $light.width();

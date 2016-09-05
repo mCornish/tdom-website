@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 $(document).ready(function () {
 	init();
@@ -11,6 +11,11 @@ function init() {
 function bindEvents() {
 	var BACKGROUND_WIDTH = 3840;
 	var BACKGROUND_HEIGHT = 2160;
+
+	$('.js-nav-link').on('click', function (e) {
+		$('.js-nav-link.is-active').removeClass('is-active');
+		$(e.target).addClass('is-active');
+	});
 
 	// $( '.js-intro' ).on( 'mousemove', function(e) {
 	// 	const $light = $( '.js-flashlight' );
