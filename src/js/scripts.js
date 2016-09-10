@@ -15,6 +15,46 @@ function bindEvents() {
 		$( e.target ).addClass( 'is-active' );
 	});
 
+    // Derived from smooth scroll code here: https://jsfiddle.net/cse_tushar/Dxtyu/141/
+    $( document ).on('scroll', handleScroll);
+
+    // Smooth scroll
+    $( '.js-nav a' ).on('click', function( e ) {
+        e.preventDefault();
+        $( document ).off( 'scroll' );
+
+        $( '.js-nav a' ).each(function() {
+            $( this ).removeClass( 'is-active' );
+        });
+        $( this ).addClass( 'is-active' );
+
+        const target = this.hash;
+        const menu = target;
+        const $target = $( target );
+        $( 'html, body' ).stop().animate({
+            'scrollTop': $target.offset().top + 2
+        }, 500, 'swing', function() {
+            window.location.hash = target;
+            $( document ).on('scroll', handleScroll);
+        });
+    });
+
+    function handleScroll( e ) {
+        const scrollPos = $( document ).scrollTop();
+        $( '.js-nav a' ).each(function() {
+            const $currLink = $( this );
+            const $refEl = $( $currLink.attr('href') );
+            console.log($refEl.offset().top, scrollPos, $refEl.height());
+            if( $refEl.offset().top <= scrollPos + 200 && $refEl.offset().top + $refEl.height() > scrollPos ) {
+                $( '.js-nav a' ).removeClass( 'is-active' );
+                $currLink.addClass( 'is-active' );
+                console.log('yes');
+            } else {
+                $currLink.removeClass( 'is-active' );
+            }
+        });
+    }
+
 	// $( '.js-intro' ).on( 'mousemove', function(e) {
 	// 	const $light = $( '.js-flashlight' );
 	// 	const elWidth = $light.width();

@@ -1,5 +1,9 @@
+// Imports
+@import 'https://fonts.googleapis.com/css?family=Merriweather';
+@import 'https://fonts.googleapis.com/css?family=Merriweather+Sans';
+
 // Variables
-$color-text: hsl(0,0,90);
+$color-text: hsl(0,0,80);
 $color-brand-1: hsl(220,100,60);
 $color-brand-2: hsl(30,100,50);
 $color-black: hsl(220,100,2);
@@ -23,6 +27,7 @@ body {
   margin: 0;
   color: $color-text;
   background-color: $color-black;
+  font-family: 'Merriweather-Sans', sans-serif;
 }
 
 h1, h2, p, a {
@@ -30,12 +35,19 @@ h1, h2, p, a {
   line-height: 1.48;
 }
 
+*+h1,
+*+h2,
+*+h3 {
+    margin-top: 1em;
+}
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
+  font-family: 'Merriweather', serif;
 }
 
 h2 {
   font-size: 1.8rem;
+  font-family: 'Merriweather', serif;
 }
 
 p, a, button, input {
@@ -56,21 +68,20 @@ a:hover {
 
 
 .button {
+    display: block;
   border: .2em solid hsl(0,0,90);
   border-radius: 10em;
   padding: 1em;
   font-size: 1em;
+  font-weight: bold;
   text-transform: uppercase;
   text-align: center;
+  cursor: pointer;
 }
-.button:hover {
-  background-color: $color-brand-2;
-  border-color: $color-brand-2;
-  color: $color-black;
-}
+.button:hover,
 .button.is-active {
-  background-color: $color-brand-2;
-  border-color: $color-brand-2;
+  background-color: $color-brand-1;
+  border-color: $color-brand-1;
   color: $color-black;
 }
 
@@ -259,7 +270,11 @@ section.container {
 .synopsis {
   background-color: $color-black;
 }
+.synopsis p {
+    font-size: 1.5em;
+}
 .synopsis__title {
+  font-size: 4em;
   text-align: center;
   height: calc(100vh - #{$intro-height});
 }
@@ -270,19 +285,39 @@ section.container {
 }
 
 
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cta__button {
+    width: 50vw;
+    margin-top: 2em;
+}
+
+
 footer {
-  display: flex;
-  justify-content: center;
   background-color: $color-black;
-  padding: 2em;
+  padding: 5em;
   margin-top: 2em;
   color: hsl(0,0,90);
-  text-align: center;
+}
+footer > * {
+    display: inline-block;
 }
 footer p {
   margin: 0;
 }
-
+footer a {
+    margin-left: .5em;
+}
+.int-links {
+    margin-left: 1em;
+}
+.ex-links {
+    float: right;
+    margin-right: 1em;
+}
 
 /* Animations */
 // glow code inspired by: https://codepen.io/FelixRilling/pen/qzfoc
